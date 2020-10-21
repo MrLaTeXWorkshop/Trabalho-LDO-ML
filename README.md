@@ -1,2 +1,3 @@
-# Trabalho-LDO-ML
-Trabalho feito para a PUC-MG com o propósito de criar um LDO sobre o tema Machine Learning
+# Trabalho-LDO- Machine Learning
+![Markdown Logo](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Markdown Logo")
+![License](https://img.shields.io/cran/l/devtools "License")
