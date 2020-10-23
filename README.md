@@ -1,7 +1,8 @@
 # Trabalho-LDO- Machine Learning
 
-![Markdown Logo](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Markdown Logo")
+![Capa](https://i.imgur.com/JTZCbcM.png "Capa do Livro")
 
+![Markdown Logo](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Markdown Logo")
 ![License](https://img.shields.io/cran/l/devtools?color=GPL3&label=licen%C3%A7a&logo=GPL3&logoColor=GPL3&style=plastic "License")
 
 
