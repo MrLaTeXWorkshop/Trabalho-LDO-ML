@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\graphicspath{{../../imagens/}}
+%----------------------------------------------------------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+%----------------------------------------------------------
+\title{\textbf{LDO - Capítulo 3\\
+Como é feito esse aprendizado de máquina}}
+
+\author{Homenique}
+\date{23/10/2020}
+%----------------------------------------------------------
+\begin{document}
+    \maketitle
+
+    Quando vamos falar de Machine learning, é importante entendermos como as máquinas aprendem. de forma bem simples podemos dividir em 3 grupos de formas de aprendizados 
+    \begin{itemize}
+    \item 
+    Aprendizado Supervisionado 
+    \item Aprendizado Não supervisionado
+    \item Aprendizado Por reforço
+    \end{itemize}
+    vamos conhecer um pouco de cada um?
+    
+%---------------------------   texto 1
+            \section*{\centering Aprendizado Supervisionado:}\label{sec:Aprendizado_Supervisionado}
+            
+            \begin{figure}[ht]
+            \centering
+            \includegraphics[scale=0.4]{robo_aprendedo.jpg}               
+            \end{figure}
+            
+
+            \paragraph{}Aprendizagem supervisionada é a tarefa de encontrar uma função a partir de dados de treinamento rotulados. O objetivo é encontrar os parâmetros ótimos que ajustem um modelo que possa prever rótulos desconhecidos em outros objetos (o conjunto de teste). Se o rótulo é um número real, a tarefa chama-se regressão. Se o rótulo vem de um conjunto finito e não ordenado, então a tarefa chama-se classificação.
+                
+%---------------------------   texto 2 
+           \section*{\centering Não supervisionado:}
+        
+            \paragraph{}Na aprendizagem não-supervisionada temos menos informação sobre os objetos, em particular, o conjunto de treinamento não é rotulado. O nosso objetivo, neste contexto, é observar algumas similaridades entre os objetos e incluí-los em grupos apropriados. 
+                
+            \begin{figure}[ht]
+            \label{fig:classificação}
+            \centering
+            \includegraphics[scale=0.3]{classificação de grupos.png}               
+            \end{figure}
+            Alguns objetos podem diferir largamente de todos os grupos e, deste modo, podemos assumir que estes objetos são anomalias.
+           
+%---------------------------   texto 3
+           \clearpage
+           \section*{\centering Por reforço:}
+           \begin{figure}[ht]
+           \centering
+           \includegraphics[scale=0.2]{jack-jack-num-num-cookie_orig.png}
+           \end{figure}
+   
+           \paragraph{}Aprendizagem por reforço é uma área de aprendizagem de máquina que investiga como agentes de software devem agir em determinados ambientes de modo a maximizar alguma noção de recompensa cumulativa.
+%---------------------------   Extras
+        
+            \section*{\centering Material extra}
+            
+            Que tal a gente ver algumas coisas a mais?
+            \begin{itemize}
+            
+            %---------------------------------------
+                \item\href{https://www.youtube.com/watch?v=R9OHn5ZF4Uo&t}{​How Machines Learn (com legendas em pt-br)}
+            
+            %----------------------------------------    
+                \item\href{https://www.youtube.com/watch?v=mhe5e2B9bL8&t=1s}{Machine Learning: como ensinar uma máquina a aprender | Nerdologia Tech}
+            
+            %----------------------------------------
+             \item Veja com ensinamento de máquina por reforço \\ %br 
+             \href{https://www.youtube.com/watch?v=r8KWciNmEGw}{Inteligência Artificial ESTACIONANDO carros!}
+            
+            %----------------------------------------
+             \item Uma explicação de como são pensados ensinamentos de máquina 
+             \\ %br  
+             \href{https://www.youtube.com/watch?v=aircAruvnKk}{But what is a Neural Network? | Deep learning, chapter 1}
+            
+            %----------------------------------------
+             \item Um texto para você se aprofundar um pouco sobre esse tópico  
+             \\ %br  
+             \href{https://blog.wittel.com/o-que-e-machine-learning/}{O que é machine learning e quais são as suas aplicações no mercado?}
+             
+            \end{itemize}
+        \begin{thebibliography}{2}
+        %---------------------- Referencia 01 
+        \bibitem{Nerdologia}
+        Atila Iamarino
+        \\
+        \href{https://www.youtube.com/watch?v=mhe5e2B9bL8&t=1s}{Machine Learning: como ensinar uma máquina a aprender | Nerdologia Tech}
+        
+      %---------------------- Referencia 02
+     
+        \bibitem{CGP}
+        CGP Grey \\
+        \href{https://www.youtube.com/watch?v=R9OHn5ZF4Uo&t}{​How Machines Learn (com legendas em pt-br)}
+     
+     
+        \end{thebibliography}
+          
+
+        
+\end{document}

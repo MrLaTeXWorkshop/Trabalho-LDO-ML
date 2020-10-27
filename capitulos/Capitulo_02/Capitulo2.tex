@@ -1,0 +1,163 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,top=3.5cm,left=3cm,right=3cm,bottom=2.5cm]{geometry}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{background}
+\usepackage[a4paper,top=3.5cm,left=3cm,right=3cm,bottom=2.5cm]{geometry}
+\usepackage{lmodern}
+
+%Configurando a path das imagens
+\graphicspath{{../../imagens/capitulo2/}}
+
+%Configurando a imagem de background
+\backgroundsetup{
+scale=1,
+angle=0,
+opacity=0.4,
+contents={%
+  \includegraphics[width=\paperwidth,height=\paperheight]{wallpaper.png}
+  }%
+}
+
+%configurando os hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+%configurando os headers
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{LDO}
+\lhead{Capítulo 1}
+\rfoot{Página \thepage}
+
+%configurando identação e separação de parágrafos
+\parindent 1.27cm
+\parskip   6pt
+
+\flushbottom
+
+%títulos,autor e data
+\title{\textbf{Capítulo 2 \\ Novidades de Machine Learning na atualidade}}
+\author{Gustavo Lopes Rodrigues}
+\date{Novembro de 2020}
+
+\begin{document}
+    
+    %Inserindo o título
+    \maketitle
+
+    %Aumentando o tamanho padrão das fontes
+    \Large
+
+    %Configurando uma imagem
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.3]{maxresdefault.jpg}
+        \caption{\href{https://youtu.be/pbVwH8o837A}{Agora Aquela I.A. Foi Longe Demais (e vai mudar o jeito que você trabalha)}}
+    \end{figure}
+    
+    %Iniciando a seção 'Inicio'
+    \section{Início}
+
+    Eai? Você viu o vídeo acima do \href{https://br.linkedin.com/in/filipedeschamps}{Filipe Deschamps}? 
+    Se não eu recomendo fortemente que assista, mas vamos comentar brevemente sobre o assunto 
+    do mesmo: a GPT-3.
+
+    Em Junho de 2020, a instituição de pesquisa em Inteligência Artificial,
+    \href{https://openai.com/}{Open AI}, lançou as versões iniciais do Generative Pre-trained Transformer 3 também conhecido 
+    pelo acrônimo GPT-3, que é um modelo de linguagem autoregressiva que usa 
+    aprendizado profundo (\href{https://www.sas.com/pt_br/insights/analytics/deep-learning.html}
+    {Deep Learning}) para produzir textos semelhantes aos humanos.
+
+    Na primeira parte do vídeo, o primeiro exemplo dado foi do site \href{https://debuild.co/}{debuild.co} 
+    que permite criar aplicativos web, rápidos apenas descrevendo as funcionalidades do programa. 
+    Porém, como é demonstrado posteriormente pelo YouTuber, a GPT-3 possui capacidades ainda mais 
+    impressionantes, como: criar gráficos, criar planilhas ou até gerar textos de 
+    figuras famosas, como \href{https://pt.wikipedia.org/wiki/Elon_Musk}{Elon Musk}.
+
+    Isso é só um exemplo em como Machine Learning ainda é uma área que só tem 
+    crescido desde o \href{run:../Capitulo1.pdf}{Game of Checkers}, mas não é 
+    o único exemplo em como essa área da computação atua no nosso dia-a-dia.
+
+    Vamos listar aqui alguns exemplos, mas saiba que nas referências desse 
+    documento, você encontrará mais links sobre o assunto “Machine Learning 
+    no cotidiano”, na seção \ref{sec:extra}
+
+    %Forçar o programa ir para uma nova página
+    \newpage
+    \section{YouTube} 
+
+    \begin{figure}[htp]
+        \centering
+        \includegraphics{youtube.png}
+    \end{figure}
+
+    Todos os vídeos na plataforma possuem uma característica muito importante
+    que são as palavras-chave (também conhecida como ‘tags’). Quando você 
+    assiste algum por um bom tempo, o algoritmo do YouTube irá induzir que 
+    o usuário gosta do tipo de conteúdo que está no vídeo. Tendo isso em mente,
+    ele irá pegar as palavras-chave do tal vídeo, e na próxima vez que o usuário 
+    abrir a página de recomendação, os vídeos que estarão na lista serão 
+    justamente aqueles que possuem as palavras-chave que o usuário demonstrou interesse.
+
+    \newpage
+    \section{Amazon}
+
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.3]{amazon.jpg}
+    \end{figure}
+
+    Assim como o YouTube, a Amazon também utiliza de um sistema de recomendações, 
+    para direcionar produtos possivelmente relevantes a um cliente, mas além 
+    disso, o sistema conta com um algoritmo que a partir de dados de pesquisas
+    anteriores, o mesmo aprende o que é mais importante para os clientes na 
+    hora de pesquisar determinado produto. Segundo estudos, quando tais 
+    sistemas são colocados, \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2263983}
+    {eles têm a capacidade de aumentar as compras em até 30\%}
+
+
+    \newpage
+    \section{Conclusão}
+    O restante dos exemplos, vamos deixar para a sua curiosidade. Mas acredito que 
+    vocês tenham captado a ideia: Machine learning está em um contínuo uso dentro da 
+    nossa sociedade e tem sido utilizado para melhorar a experiência dos usuários na internet, 
+    direcionando as suas atenções para o conteúdo que são mais atrativos.
+
+
+    \newpage
+    \section*{\centering Material extra}\label{sec:extra} %Criando uma tag para que possa ser referência em outras partes do programa
+
+    %Iniciando listagem
+    \begin{itemize}
+        \item \href{http://datascienceacademy.com.br/blog/17-casos-de-uso-de-machine-learning/}{\textbf{Machine Learning no cotidiano}}
+        \item \href{https://deepmind.com/research/case-studies/alphago-the-story-so-far}{\textbf{Alpha GO}} \\ Obs: \\ \href{https://youtu.be/WXuK6gekU1Y}{\textbf{Também de uma olhada no documentário sobre a Alpha GO}}
+        \item \href{https://youtu.be/uGYJuOyIvzs}{\textbf{Aplicação de Machine Learning na saúde}}
+        \item \href{https://youtu.be/AwmvwTopbas}{\textbf{Usando Machine Learning para fazer ampliação de vídeos}}
+        \item \href{https://forbes.com.br/forbes-insider/2020/07/por-que-o-programa-de-inteligencia-artificial-gpt-3-e-incrivel-mas-superestimado/}{\textbf{Leia mais sobre a GPT-3!}}
+    \end{itemize}
+
+    \newpage
+
+    %Iniciando referências
+    \begin{thebibliography}{2}
+        \bibitem{exemplos} 
+        Equipe Interop \\
+        \href{https://www.interop.com.br/blog/exemplos-de-machine-learning/}{\textbf{Exemplos de machine Learning}} 
+        
+        \bibitem{deschamps} 
+        Filipe Deschamps \\
+        \href{https://www.interop.com.br/blog/exemplos-de-machine-learning/}{\textbf{Agora Aquela I.A. Foi Longe Demais (e vai mudar o jeito que você trabalha)}} 
+    \end{thebibliography}
+
+    
+
+\end{document}
