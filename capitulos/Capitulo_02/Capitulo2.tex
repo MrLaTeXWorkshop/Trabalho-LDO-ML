@@ -6,9 +6,20 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
+\usepackage{background}
 
 %Configurando a path das imagens
 \graphicspath{{../../imagens/capitulo2/}}
+
+%Configurando a imagem de background
+\backgroundsetup{
+scale=1,
+angle=0,
+opacity=0.4,
+contents={%
+  \includegraphics[width=\paperwidth,height=\paperheight]{wallpaper.png}
+  }%
+}
 
 %configurando os hyperlinks
 \hypersetup{
@@ -30,7 +41,7 @@
 \parskip   6pt
 
 %títulos,autor e data
-\title{Capítulo 2 \\ Novidades de Machine Learning na atualidade}
+\title{\textbf{Capítulo 2 \\ Novidades de Machine Learning na atualidade}}
 \author{Gustavo Lopes Rodrigues}
 \date{Novembro de 2020}
 
@@ -123,11 +134,11 @@
 
     %Iniciando listagem
     \begin{itemize}
-        \item \href{http://datascienceacademy.com.br/blog/17-casos-de-uso-de-machine-learning/}{Machine Learning no cotidiano}
-        \item \href{https://deepmind.com/research/case-studies/alphago-the-story-so-far}{Alpha GO} \\ Obs: \\ \href{https://youtu.be/WXuK6gekU1Y}{Também de uma olhada no documentário sobre a Alpha GO}
-        \item \href{https://youtu.be/uGYJuOyIvzs}{Aplicação de Machine Learning na saúde}
-        \item \href{https://youtu.be/AwmvwTopbas}{Usando Machine Learning para fazer ampliação de vídeos}
-        \item \href{https://forbes.com.br/forbes-insider/2020/07/por-que-o-programa-de-inteligencia-artificial-gpt-3-e-incrivel-mas-superestimado/}{Leia mais sobre a GPT-3!}
+        \item \href{http://datascienceacademy.com.br/blog/17-casos-de-uso-de-machine-learning/}{\textbf{Machine Learning no cotidiano}}
+        \item \href{https://deepmind.com/research/case-studies/alphago-the-story-so-far}{\textbf{Alpha GO}} \\ Obs: \\ \href{https://youtu.be/WXuK6gekU1Y}{\textbf{Também de uma olhada no documentário sobre a Alpha GO}}
+        \item \href{https://youtu.be/uGYJuOyIvzs}{\textbf{Aplicação de Machine Learning na saúde}}
+        \item \href{https://youtu.be/AwmvwTopbas}{\textbf{Usando Machine Learning para fazer ampliação de vídeos}}
+        \item \href{https://forbes.com.br/forbes-insider/2020/07/por-que-o-programa-de-inteligencia-artificial-gpt-3-e-incrivel-mas-superestimado/}{\textbf{Leia mais sobre a GPT-3!}}
     \end{itemize}
 
     \newpage
@@ -136,11 +147,11 @@
     \begin{thebibliography}{2}
         \bibitem{exemplos} 
         Equipe Interop \\
-        \href{https://www.interop.com.br/blog/exemplos-de-machine-learning/}{Exemplos de machine Learning} 
+        \href{https://www.interop.com.br/blog/exemplos-de-machine-learning/}{\textbf{Exemplos de machine Learning}} 
         
         \bibitem{deschamps} 
         Filipe Deschamps \\
-        \href{https://www.interop.com.br/blog/exemplos-de-machine-learning/}{Agora Aquela I.A. Foi Longe Demais (e vai mudar o jeito que você trabalha)} 
+        \href{https://www.interop.com.br/blog/exemplos-de-machine-learning/}{\textbf{Agora Aquela I.A. Foi Longe Demais (e vai mudar o jeito que você trabalha)}} 
     \end{thebibliography}
 
     
