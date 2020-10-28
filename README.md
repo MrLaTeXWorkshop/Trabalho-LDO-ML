@@ -6,6 +6,16 @@
 ![License](https://img.shields.io/cran/l/devtools?color=GPL3&label=licen%C3%A7a&logo=GPL3&logoColor=GPL3&style=plastic "License")
 
 
+### Metas do projeto:
+
+- [x] 4/4 PDFs feitos
+- [x] 4/4 PDFs feitos utilizando LaTeX
+- [x] links interessantes 
+- [ ] linhas de código
+- [ ] vídeos e páginas da internet no projeto
+- [ ] Aúdiolivros
+
+
 [Clique nesse link para ir a página de download](https://github.com/MysteRys337/Trabalho-LDO-ML/releases)
 
 # O que é um LDO?

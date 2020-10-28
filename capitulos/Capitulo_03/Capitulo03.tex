@@ -1,25 +1,58 @@
-\documentclass[12pt]{article}
+\documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage[a4paper,top=3.5cm,left=3cm,right=3cm,bottom=2.5cm]{geometry}
 \usepackage[brazil]{babel}
-\usepackage{hyperref}
 \usepackage{graphicx}
-\usepackage{geometry}
-\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
-\graphicspath{{../../imagens/}}
-%----------------------------------------------------------
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{background}
+\usepackage[a4paper,top=3.5cm,left=3cm,right=3cm,bottom=2.5cm]{geometry}
+\usepackage{lmodern}
+
+%Configurando a path das imagens
+\graphicspath{{../../imagens/capitulo3/}}
+
+
+%Configurando a imagem de background
+\backgroundsetup{
+scale=1,
+angle=0,
+opacity=0.4,
+contents={%
+  \includegraphics[width=\paperwidth,height=\paperheight]{wallpaper.png}
+  }%
+}
+
+%configurando os hyperlinks
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,
+    filecolor=magenta,      
     urlcolor=cyan,
 }
-%----------------------------------------------------------
+
+%configurando os headers
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{LDO}
+\lhead{Capítulo 1}
+\rfoot{Página \thepage}
+
+%configurando identação e separação de parágrafos
+\parindent 1.27cm
+\parskip   6pt
+
+\flushbottom
+
+
+%títulos,autor e datas
 \title{\textbf{LDO - Capítulo 3\\
 Como é feito esse aprendizado de máquina}}
-
 \author{Homenique}
 \date{23/10/2020}
-%----------------------------------------------------------
+
+%inicio do Texto 
 \begin{document}
     \maketitle
 
@@ -32,7 +65,7 @@ Como é feito esse aprendizado de máquina}}
     \end{itemize}
     vamos conhecer um pouco de cada um?
     
-%---------------------------   texto 1
+%Texto 01
             \section*{\centering Aprendizado Supervisionado:}\label{sec:Aprendizado_Supervisionado}
             
             \begin{figure}[ht]
@@ -43,7 +76,7 @@ Como é feito esse aprendizado de máquina}}
 
             \paragraph{}Aprendizagem supervisionada é a tarefa de encontrar uma função a partir de dados de treinamento rotulados. O objetivo é encontrar os parâmetros ótimos que ajustem um modelo que possa prever rótulos desconhecidos em outros objetos (o conjunto de teste). Se o rótulo é um número real, a tarefa chama-se regressão. Se o rótulo vem de um conjunto finito e não ordenado, então a tarefa chama-se classificação.
                 
-%---------------------------   texto 2 
+%Texto 02 
            \section*{\centering Não supervisionado:}
         
             \paragraph{}Na aprendizagem não-supervisionada temos menos informação sobre os objetos, em particular, o conjunto de treinamento não é rotulado. O nosso objetivo, neste contexto, é observar algumas similaridades entre os objetos e incluí-los em grupos apropriados. 
@@ -55,7 +88,7 @@ Como é feito esse aprendizado de máquina}}
             \end{figure}
             Alguns objetos podem diferir largamente de todos os grupos e, deste modo, podemos assumir que estes objetos são anomalias.
            
-%---------------------------   texto 3
+%Texto 03
            \clearpage
            \section*{\centering Por reforço:}
            \begin{figure}[ht]
@@ -64,7 +97,9 @@ Como é feito esse aprendizado de máquina}}
            \end{figure}
    
            \paragraph{}Aprendizagem por reforço é uma área de aprendizagem de máquina que investiga como agentes de software devem agir em determinados ambientes de modo a maximizar alguma noção de recompensa cumulativa.
-%---------------------------   Extras
+
+
+ %Iniciando listagem
         
             \section*{\centering Material extra}
             
@@ -92,6 +127,9 @@ Como é feito esse aprendizado de máquina}}
              \href{https://blog.wittel.com/o-que-e-machine-learning/}{O que é machine learning e quais são as suas aplicações no mercado?}
              
             \end{itemize}
+
+
+        %Iniciando referências
         \begin{thebibliography}{2}
         %---------------------- Referencia 01 
         \bibitem{Nerdologia}
