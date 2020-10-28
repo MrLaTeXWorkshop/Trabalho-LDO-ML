@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/cran/l/devtools?color=GPL3&label=licen%C3%A7a&logo=GPL3&logoColor=GPL3&style=plastic "License")
 
 
-Metas do projeto:
+### Metas do projeto:
 
 - [x] 4/4 PDFs feitos
 - [x] 4/4 PDFs feitos utilizando LaTeX
