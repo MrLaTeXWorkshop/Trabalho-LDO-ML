@@ -32,4 +32,12 @@ Ao baixar o nosso repositório você irá encontrar diversos arquivos, o que eu 
 
 Eu e os integrantes desse grupo, decidimos que queriamos fazer um conteúdo que poderia atrair qualquer pessoa que esteja interessado no assunto, seja um estudante de Ensino Médio que ainda está se perguntando qual curso fazer, seja um calouro da Ciência da Computação, que quer ter uma prévia no assunto que estamos abordando, ou quem sabe, você é apenas alguém curioso no assunto e quer saber mais sobre essa tecnologia.
 
+# Sobre o download
+
+Se você estiver interessado em baixar o nosso conteúdo, estamos disponibilizando duas versões do projeto:
+
+* Baixar ou clonar esse repositório, ou...
+* Baixar a última versão lançada do projeto clicando [aqui](https://github.com/MysteRys337/Trabalho-LDO-ML/releases).
+
+Recomendamos que baixe o LDO a partir da página de download, use apenas o código fonte se você tiver conhecimento de LaTeX e como compilar os arquivos.
 
