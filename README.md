@@ -11,8 +11,7 @@
 - [x] 4/4 PDFs feitos
 - [x] 4/4 PDFs feitos utilizando LaTeX
 - [x] links interessantes 
-- [ ] linhas de código
-- [ ] vídeos e páginas da internet no projeto
+- [ ] Mapas mentais
 - [ ] Aúdiolivros
 
 
