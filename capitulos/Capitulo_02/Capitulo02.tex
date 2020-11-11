@@ -10,19 +10,9 @@
 \usepackage{lmodern}
 \usepackage{tikz}
 \usepackage[font={small,stretch=0.80,it}]{caption}
+\usepackage{tcolorbox}
 
-\newenvironment{caixa}
-    {
-    \begin{center}
-        \begin{tabular}{|p{0.9\textwidth}|}
-        \hline\\
-        }
-        { 
-        \\\\\hline
-        \end{tabular} 
-    \end{center}
-    }
-%--------------------------------------------------
+\newtcolorbox{caixa}{colback=red!5!white,colframe=red!75!black}
 
 %Configurando o mapa mental
 \usetikzlibrary{mindmap}
