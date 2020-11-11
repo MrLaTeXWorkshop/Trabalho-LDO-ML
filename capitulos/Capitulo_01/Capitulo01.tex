@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{setspace}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper,top=3.5cm,left=3cm,right=3cm,bottom=2.5cm]{geometry}
@@ -7,6 +8,13 @@
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{background}
+\usepackage[a4paper,top=3.5cm,left=3cm,right=3cm,bottom=2.5cm]{geometry}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage[font={small,stretch=0.80,it}]{caption}
+
+%Configurando o mapa mental
+\usetikzlibrary{mindmap}
 
 %Configurando a path das imagens
 \graphicspath{{../../imagens/capitulo1/}}
@@ -41,7 +49,7 @@ contents={%
 \parskip   6pt
 
 %títulos,autor e data
-\title{Capítulo 1}
+\title{\textbf{Capítulo 1 \\ Um pouco sobre Machine Learning}}
 \author{Thiago Henriques Nogueira}
 \date{Novembro de 2020}
 
@@ -49,12 +57,42 @@ contents={%
     
     %Inserindo o título
     \maketitle
+   
+    \begin{center}
+        \begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=orange!40,
+        level 1/.append style={level distance=5cm,sibling angle=90},
+        level 2/.append style={level distance=3cm,sibling angle=45}]
+
+        \node{Um pouco sobre Machine Learning}
+            child [concept color=blue!30] { node {Inicio \\ \ref{sec:introduction}}
+                child { node {\href{https://www.sas.com/pt_br/insights/analytics/deep-learning.html}{Deep Learning}}}
+                child { node {\href{https://openai.com/}{Open AI}}}
+                child { node {\href{https://debuild.co/}{debuild.co}}}
+            }
+            child [concept color=yellow!30] { node {Development \\ \ref{sec:desenvolvimento}}
+                child { node {\href{https://rockcontent.com/br/blog/algoritmo-do-youtube/}{Algoritmo de pesquisa}}}
+                child { node {\href{https://youtu.be/oWcVTWLgACM}{Tags}}}
+                child { node {\href{https://super.abril.com.br/tecnologia/como-funciona-a-recomendacao-de-videos-do-youtube/}{Recomen dação}}}
+            };
+            % child [concept color=teal!40] { node {Amazon \\ \ref{sec:amazon}}
+            %     child { node {\href{https://www.noticiastecnologia.com.br/amazon-ajusta-algoritmo-de-pesquisa-para-priorizar-os-proprios-produtos}{Relevância ou Lucro?}}}
+            %     child { node {\href{https://www.visualcapitalist.com/amazon-worlds-most-valuable-retailer/}{Maior varejista dos EUA}}}
+            % }
+            % child [concept color=purple!50] { node {Deep Blue \\ \ref{sec:deep_blue}}
+            %     child { node {\href{https://pt.wikipedia.org/wiki/Garry_Kasparov}{Garry Kasparov}}}
+            %     child { node {\href{https://pt.wikipedia.org/wiki/IBM}{IBM}}}
+            %     child { node {\href{https://canaltech.com.br/produtos/o-que-e-supercomputador/}{Super computador}}}
+            % };
+        \end{tikzpicture}
+
+    \end{center}
+
 
     %Aumentando o tamanho padrão das fontes
     \Large
     
     %Iniciando a seção 'Inicio'
-    \section{Início}
+    \section{Início} \label{sec:introduction}
 
     Antes de entrarmos no assunto precisamos saber: o que Machine Learning significa? Bom traduzindo ao 
     pé da letra, Machine Learning está ligado ao Aprendizado de Máquina. Porém por mais que esse 
@@ -75,7 +113,7 @@ contents={%
 
     %Forçar o programa ir para uma nova página
     \newpage
-    \section{Desenvolvimento} 
+    \section{Desenvolvimento} \label{sec:desenvolvimento}
 
     \begin{figure}[htp]
         \centering
