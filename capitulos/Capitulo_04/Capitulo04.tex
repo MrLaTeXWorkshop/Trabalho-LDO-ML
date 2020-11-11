@@ -1,10 +1,15 @@
+
 \documentclass[12pt]{article}
 \usepackage[utf8]{ inputenc}
 \usepackage[brazil]{babel}
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{geometry}
+\usepackage{fancyhdr}
 \usepackage{background}
+\usepackage{tikz}
+\usetikzlibrary{mindmap}
+
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 % Path das imagens
@@ -17,8 +22,14 @@
     urlcolor=cyan,
 }
 %----------------------------------------------------------
+% Cabeçalho e rodapé
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{LDO}
+\lhead{Capítulo 4}
+\rfoot{Página \thepage}
 
-%Imagem de background
+% Imagem de fundo (background)
 \backgroundsetup{
 scale=1,
 angle=0,
@@ -30,32 +41,97 @@ contents={%
 
 %-------------------------------------------------------------
 
-\title{\textbf{LDO - Capítulo 4\\
+\title{\textbf{Capítulo 4\\
 Tópicos de Machine Learning}}
 
 \author{Igor Marques Reis}
-\date{23/10/2020}
+\date{Novembro de 2020}
 %----------------------------------------------------------
+                %  MAPA MENTAL  %
 \begin{document}
-    \maketitle
 
+
+%----------------------------------------------------------
+%\begin{document}
+
+
+    \maketitle
+    
+    
+    \
+    
+    \begin{tikzpicture}[grow cyclic, text width=2.7cm, align=flush center,
+	level 1/.style={level distance=5cm,sibling angle=90},
+	level 2/.style={level distance=2.5cm,sibling angle=57}]
+
+\node{\textbf{Algumas áreas de Machine Learning}}
+child { node {Educação}
+	child { node {\href{https://educador360.com/gestao/deep-learning/}{Deep Learning}}}
+	child { node {\href{https://www.terra.com.br/noticias/dino/aprendizado-de-maquina-nas-escolas-prepara-os-jovens-para-os-desafios-da-transformacao-digital-no-brasil,567b6b42531c4546e61131673ae0af6b712hokp0.html}{Infantil}}}
+	child { node {\href{http://www.betha.com.br/noticia/com-machine-learning-betha-sistemas-preve-reprovacao-e-evasao-escolar-logo-no-inicio-do-ano}{Evasão Escolar}}}
+	child { node {\href{https://cer.sebrae.com.br/machine-learning-na-educacao-como-funciona/}{Escolas}}}
+}
+child { node {Negócios}
+	child { node {\href{https://www.bloomberg.com.br/blog/big-data-machine-learning-e-data-science-aplicadas-no-mercado-financeiro/}{Mercado Financeiro}}}
+	child { node {\href{https://minerandodados.com.br/prevendo-precos-de-acoes-da-bolsa-de-valores-com-machine-learning/}{Bolsa de Valores}}}
+	child { node {\href{https://bit.ly/37fykl1}{Indústria}}}
+	child { node {\href{https://computerworld.com.br/inovacao/como-empresas-tem-aplicado-machine-learning-para-impulsionar-negocios/}{Empresas Inteligentes}}}
+}
+child { node {Games}
+	child { node {\href{https://www.youtube.com/watch?v=qv6UVOQ0F44}{MarI/O}}}
+	child { node {\href{https://www.youtube.com/watch?v=cwzKjFkSyIE}{Jogo da Velha}}}
+	child { node {\href{https://www.youtube.com/watch?v=-oUVr_B_cQo}{Mortal Kombat}}}
+}
+child { node {Segurança}
+	child { node {\href{https://startupi.com.br/2019/07/inteligencia-artificial-comeca-a-chegar-a-seguranca-publica/}{Vida Pública}}}
+	child { node {\href{https://blogbrasil.westcon.com/os-beneficios-do-machine-learning-na-seguranca-de-rede}{Redes}}}
+	child { node {\href{https://revistagalileu.globo.com/Tecnologia/noticia/2020/08/inteligencia-artificial-preve-ocorrencia-de-crimes-em-areas-urbanas.html}{Crimes Urbanos}}}
+	child { node {\href{https://blog.algartelecom.com.br/mge/como-o-machine-learning-ajuda-empresas-na-seguranca-da-informacao/}{Dados}}}
+	child { node {\href{https://computerworld.com.br/plataformas/projeto-usa-machine-learning-para-combate-a-lavagem-de-dinheiro/}{Lavagem de Dinheiro}}}
+};
+
+
+
+\end{tikzpicture}
+    
+    
+    \
+    
+    \
+    
+    \
+    
+    \
+    
+    \
+    
+    \
+    
+    \
+    
+    \
+    
     \centering Agora que você já tem uma visão mais ampla sobre Machine Learning,
 que tal pesquisar um pouco sobre as situações em que ela pode ser
 utilizada, e muitas vezes, \href{https://www.deal.com.br/blog/7-maneiras-de-como-a-inteligencia-artificial-esta-mudando-nosso-dia-a-dia/}{mudar a vida das pessoas}?
 
+\
 
-    \centering \large\textbf{Vamos lá!}
+    \centering \Large{\textbf{Vamos lá!}}
     
 %---------------------------   texto 1
+\large
             \section*{\centering Machine Learning na educação:}\label{sec:ML_Na_Educacao}
             
             \begin{figure}[ht]
             \centering
-            \includegraphics[scale=0.4]{ldo-1.jpg}               
+            \includegraphics[scale=0.6]{ldo-1.jpg}               
             \end{figure}
             
+\
+            
     Sabemos que não é novidade para ninguém que os smartphones e seus aplicativos já
-fazem parte do processo de educação, inclusive há instituições de ensino que utilizam ativamente
+fazem parte do processo de educação. Inclusive há instituições de ensino que utilizam ativamente
 essas ferramentas para auxiliar o processo de aprendizagem de seus alunos.
 Já pensou em ter um professor que está sempre disponível para tirar
 suas dúvidas, e tudo você precisa fazer para contatá-lo seria abrir um
@@ -106,9 +182,11 @@ perfeição (sem nenhuma morte!). Incrível, né?
            \section*{\centering Machine Learning em negócios:}\label{sec:ML_Negocios}
            \begin{figure}[ht]
            \centering
-           \includegraphics[scale=0.5]{ldo-3.1.png}
+           \includegraphics[scale=0.4]{ldo-3.1.png}
            \end{figure}
    
+  \
+  
            Já pensou em fundar uma empresa? Ser seu próprio chefe? Saiba que
 o Machine Learning pode te ajudar nessa empreitada! Já pensou em
 conseguir identificar os níveis de risco e estimar o tempo de retorno de
