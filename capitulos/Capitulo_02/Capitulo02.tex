@@ -11,6 +11,19 @@
 \usepackage{tikz}
 \usepackage[font={small,stretch=0.80,it}]{caption}
 
+\newenvironment{caixa}
+    {
+    \begin{center}
+        \begin{tabular}{|p{0.9\textwidth}|}
+        \hline\\
+        }
+        { 
+        \\\\\hline
+        \end{tabular} 
+    \end{center}
+    }
+%--------------------------------------------------
+
 %Configurando o mapa mental
 \usetikzlibrary{mindmap}
 
@@ -85,12 +98,6 @@ contents={%
 
     \end{center}
 
-    \begin{center}
-
-        \href{./Capitulo02.mp3}{Teste de audio}
-
-    \end{center}
-
     %Configurando uma imagem
     \newpage    
     \begin{figure}[htp]
@@ -99,6 +106,12 @@ contents={%
         \caption{\href{https://youtu.be/pbVwH8o837A}{Agora Aquela I.A. Foi Longe Demais (e vai mudar o jeito que você trabalha)}}
     \end{figure}
     
+    \begin{caixa}
+        \begin{center}
+            \href{https://soundcloud.com/gustavo-rodrigues-468052117/ldo-machine-learning-capitulo02?in=gustavo-rodrigues-468052117/sets/ldo-machine-learning}{Ouça o Podcast desse PDF!}
+        \end{center}
+    \end{caixa}
+
     %Iniciando a seção 'Inicio'
     \section{Início} \label{sec:gpt-3}
 
@@ -148,7 +161,7 @@ contents={%
     onde pela primeira vez um jogador humano perdeu para uma máquina em um jogo.
 
     Vamos listar aqui dois exemplos,mas saiba que na seção \ref{sec:extra}, você encontrará mais links sobre o assunto “Machine Learning no cotidiano”, inclusive
-    contendo mais exemplos sobre aprendizado de máquinas em jogos, 
+    contendo mais exemplos sobre o aprendizado de máquinas em jogos, 
 
     %Forçar o programa ir para uma nova página
     \newpage
@@ -160,8 +173,8 @@ contents={%
     \end{figure}
 
     Todos os vídeos na plataforma possuem uma característica muito importante
-    que são as palavras-chave (também conhecida como ‘tags’). Quando você 
-    assiste algum por um bom tempo, o algoritmo do YouTube irá induzir que 
+    que são: palavras-chave (também conhecida como ‘tags’). Quando você 
+    assiste algum vídeo por um bom tempo, o algoritmo do YouTube irá induzir que 
     o usuário gosta do tipo de conteúdo que está no vídeo. Tendo isso em mente,
     ele irá pegar as palavras-chave do tal vídeo, e na próxima vez que o usuário 
     abrir a página de recomendação, os vídeos que estarão na lista serão 
