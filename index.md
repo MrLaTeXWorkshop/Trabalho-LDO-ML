@@ -42,7 +42,7 @@ Recomendamos que baixe o LDO a partir da página de download, use apenas o códi
 
 # Quer assistir a apresentação desse material?!
 
-![TecnoLDO](https://imgur.com/a/v1TOJac "TecnoLDO") 
+![TecnoLDO](https://i.imgur.com/CzVwwUO.png "TecnoLDO") 
 
 ### [Faça sua inscrição no Sympla](https://www.sympla.com.br/tecnoldo__1046454)
 
