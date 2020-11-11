@@ -49,18 +49,5 @@ Recomendamos que baixe o LDO a partir da página de download, use apenas o códi
 
 # Créditos
 
-### MysteRys337 ( Gustavo Lopes ) 
-![MysteRysLogo](https://avatars0.githubusercontent.com/u/9157977?s=460&u=f4e12d0aeb11ae0c27f7fd51eb76774b968cdffb&v=4 "MysteRysLogo") 
-
-![LinkedinLogo](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat&logo=linkedin&logoColor=white "LinkedingLogo")
-[Linkedin](https://www.linkedin.com/in/gustavo-rodrigues-260351184/)
-
-![YouTubeLogo](https://img.shields.io/badge/Youtube-Inscreva-red "YouTubeLogo")
-[Canal do YouTube](https://www.youtube.com/channel/UCIGi-LLBajCub9BiY89FKLg)
-
-![TwitterLogo](https://img.shields.io/twitter/url?label=MysteRys337&style=social&url=https%3A%2F%2Ftwitter.com%2FMysteRys337 "TwitterLogo")
-[Meu Twitter](https://twitter.com/MysteRys337)
-
-
-
+[Créditos](https://github.com/MysteRys337/Trabalho-LDO-ML/graphs/contributors)
 
