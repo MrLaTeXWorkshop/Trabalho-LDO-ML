@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# Trabalho-LDO- Machine Learning
 
-You can use the [editor on GitHub](https://github.com/MysteRys337/Trabalho-LDO-ML/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![Capa](https://i.imgur.com/JTZCbcM.png "Capa do Livro")
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Markdown Logo](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Markdown Logo")
+![License](https://img.shields.io/cran/l/devtools?color=GPL3&label=licen%C3%A7a&logo=GPL3&logoColor=GPL3&style=plastic "License")
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Metas do projeto:
 
-```markdown
-Syntax highlighted code block
+- [x] 4/4 PDFs feitos
+- [x] 4/4 PDFs feitos utilizando LaTeX
+- [x] links interessantes 
+- [ ] Mapas mentais
+- [ ] Aúdiolivros
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+[Clique nesse link para ir a página de download](https://github.com/MysteRys337/Trabalho-LDO-ML/releases)
 
-1. Numbered
-2. List
+# O que é um LDO?
 
-**Bold** and _Italic_ and `Code` text
+LDO ou Learning Digital Object é uma coleção de arquivos digitais(.PDFs, vídeos, imagens, aúdios além de outros) que tem como propósito de um aprendizado singular.
 
-[Link](url) and ![Image](src)
-```
+No caso desse repositório, eu e meus amigos decidimos nos reunir em função de um trabalho para a nossa disciplina de Iniciação a pesquisa em Informática, para a construção de um LDO sobre o tema: Machine Learning ou Aprendizado de máquina.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+# Sobre o conteúdo
 
-### Jekyll Themes
+Ao baixar o nosso repositório você irá encontrar diversos arquivos, o que eu daria mais atenção é ao arquivo 'Sumário.pdf' que irá servir como ponto de partida para todos, mas a partir de tal ponto, vocês terão 4 capítulos para escolherem e aprenderem um pouco mais sobre como o Aprendizado de máquina acontece.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MysteRys337/Trabalho-LDO-ML/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# Para quem esse conteúdo é destinado?
 
-### Support or Contact
+Eu e os integrantes desse grupo, decidimos que queriamos fazer um conteúdo que poderia atrair qualquer pessoa que esteja interessado no assunto, seja um estudante de Ensino Médio que ainda está se perguntando qual curso fazer, seja um calouro da Ciência da Computação, que quer ter uma prévia no assunto que estamos abordando, ou quem sabe, você é apenas alguém curioso no assunto e quer saber mais sobre essa tecnologia.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Sobre o download
+
+Se você estiver interessado em baixar o nosso conteúdo, estamos disponibilizando duas versões do projeto:
+
+* Baixar ou clonar esse repositório, ou...
+* Baixar a última versão lançada do projeto clicando [aqui](https://github.com/MysteRys337/Trabalho-LDO-ML/releases).
+
+Recomendamos que baixe o LDO a partir da página de download, use apenas o código fonte se você tiver conhecimento de LaTeX e como compilar os arquivos.
