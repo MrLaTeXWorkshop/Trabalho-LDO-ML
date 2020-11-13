@@ -19,7 +19,7 @@
 
 # O que é um LDO?
 
-LDO ou Learning Digital Object é uma coleção de arquivos digitais(.PDFs, vídeos, imagens, aúdios além de outros) que tem como propósito de um aprendizado singular.
+LDO ou ```Learning Digital Object``` é uma coleção de arquivos digitais ```(.PDFs, vídeos, imagens, aúdios além de outros)``` que tem como propósito de um aprendizado singular.
 
 No caso desse repositório, eu e meus amigos decidimos nos reunir em função de um trabalho para a nossa disciplina de Iniciação a pesquisa em Informática, para a construção de um LDO sobre o tema: Machine Learning ou Aprendizado de máquina.
 
@@ -45,7 +45,6 @@ Recomendamos que baixe o LDO a partir da página de download, use apenas o códi
 ![TecnoLDO](https://i.imgur.com/CzVwwUO.png "TecnoLDO") 
 
 ### [Faça sua inscrição no Sympla](https://www.sympla.com.br/tecnoldo__1046454)
-
 
 # Créditos
 
