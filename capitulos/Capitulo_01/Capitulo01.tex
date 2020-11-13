@@ -64,24 +64,14 @@ contents={%
 
         \node{Um pouco sobre Machine Learning}
             child [concept color=blue!30] { node {Inicio \\ \ref{sec:introduction}}
-                child { node {\href{https://www.sas.com/pt_br/insights/analytics/deep-learning.html}{Deep Learning}}}
-                child { node {\href{https://openai.com/}{Open AI}}}
-                child { node {\href{https://debuild.co/}{debuild.co}}}
+                child { node {\href{https://history-computer.com/ModernComputer/thinkers/Samuel.html}{O Pai do ML}}}
+                child { node {\href{https://www.monolitonimbus.com.br/conceitos-em-machine-learning/}{Conceitos de ML}}}
             }
             child [concept color=yellow!30] { node {Development \\ \ref{sec:desenvolvimento}}
-                child { node {\href{https://rockcontent.com/br/blog/algoritmo-do-youtube/}{Algoritmo de pesquisa}}}
-                child { node {\href{https://youtu.be/oWcVTWLgACM}{Tags}}}
-                child { node {\href{https://super.abril.com.br/tecnologia/como-funciona-a-recomendacao-de-videos-do-youtube/}{Recomen dação}}}
+                child { node {\href{https://mundomaistech.com.br/inteligencia-artificial/8-exemplos-do-uso-de-machine-learning-que-deram-certo/}{Projetos com ML}}}
+                child { node {\href{https://www.dca.ufrn.br/~lmarcos/courses/robotica/notes/perceptrons.pdf}{Perceptrons}}}
+                child { node {\href{https://blogbrasil.comstor.com/8-mitos-sobre-machine-learning-desvendados}{Curiosidades de ML}}}
             };
-            % child [concept color=teal!40] { node {Amazon \\ \ref{sec:amazon}}
-            %     child { node {\href{https://www.noticiastecnologia.com.br/amazon-ajusta-algoritmo-de-pesquisa-para-priorizar-os-proprios-produtos}{Relevância ou Lucro?}}}
-            %     child { node {\href{https://www.visualcapitalist.com/amazon-worlds-most-valuable-retailer/}{Maior varejista dos EUA}}}
-            % }
-            % child [concept color=purple!50] { node {Deep Blue \\ \ref{sec:deep_blue}}
-            %     child { node {\href{https://pt.wikipedia.org/wiki/Garry_Kasparov}{Garry Kasparov}}}
-            %     child { node {\href{https://pt.wikipedia.org/wiki/IBM}{IBM}}}
-            %     child { node {\href{https://canaltech.com.br/produtos/o-que-e-supercomputador/}{Super computador}}}
-            % };
         \end{tikzpicture}
 
     \end{center}
@@ -89,12 +79,12 @@ contents={%
 
     %Aumentando o tamanho padrão das fontes
     \Large
-    
-    %Iniciando a seção 'Inicio'
-    \section{Início} \label{sec:introduction}
 
-    Antes de entrarmos no assunto precisamos saber: o que Machine Learning significa? Bom traduzindo ao 
-    pé da letra, Machine Learning está ligado ao Aprendizado de Máquina. Porém por mais que esse 
+    %Iniciando a seção 'Inicio'
+    \newpage
+    \section{Início} \label{sec:introduction}
+    
+    Antes de entrarmos no assunto precisamos saber: o que Machine Learning significa? Bom traduzindo ao pé da letra, Machine Learning está ligado ao Aprendizado de Máquina. Porém por mais que esse 
     assunto tenha aparecido mais durante a atualidade, seu termo foi criado a muito tempo atrás.
 
     Em 1959 \href{https://en.wikipedia.org/wiki/Arthur_Samuel}{Arthur Samuel}, conhecido como o 
@@ -102,13 +92,21 @@ contents={%
 
     \begin{figure}[htp]
         \centering
-        \includegraphics[scale=1.5]{ArthurSamuel.jpg}
-        \caption{\href{https://youtu.be/pbVwH8o837A}{Imagem de Arthur Samuel}}
+        \includegraphics[scale=1]{ArthurSamuel.jpg}
+        \caption{Imagem de Arthur Samuel}
     \end{figure}
 
     Nessa época, ele trabalhava em um algoritmo capaz de jogar xadrez, que devido a um sistema de
     pontuação, melhorava suas estratégias gradativamente após cada partida. O programa foi nomeado
     Games of Checkers.
+
+    Logo abaixo, existe um pequeno video explicando sobre Machine Learning para complementar o conceito
+
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.65]{ML.png}
+        \caption{\href{https://youtu.be/pbVwH8o837A}{O que é Machine Learning?}}
+    \end{figure}
 
     %Forçar o programa ir para uma nova página
     \newpage
@@ -119,7 +117,6 @@ contents={%
         \includegraphics[scale=0.3]{maxresdefault.jpg}
         \caption{\href{https://youtu.be/pbVwH8o837Ahttps://www.youtube.com/watch?v=JyGGMyR3x5I}{Machine Learning: Tutorial prático usando apenas o navegador (é sensacional!!!)}}
     \end{figure}
-
 
     Se você não assistiu esse vídeo do canal do Filipe Deschamps, é uma ótima oportunidade para 
     quem quer aprender sobre essa área. Juntamente com o co-fundador da Alura, Guilherme Silveira, 
@@ -133,6 +130,9 @@ contents={%
     Entre as redes neurais podemos observar os perceptrons, considerados os tipos mais simples de 
     rede neural. Inventada em 1958 por \href{https://en.wikipedia.org/wiki/Arthur_Samuel}{Frank Rosenblatt}, 
     os perceptrons são representações dos neurônios do algoritmo.  
+
+    Com isso, fique a vontade para navegar e descobrir mais sobre essa incrivel area nós proximos capitulos desse
+    LDO.
 
     \newpage
     \section*{\centering Material extra}\label{sec:extra} %Criando uma tag para que possa ser referência em outras partes do programa
@@ -148,7 +148,7 @@ contents={%
     \newpage
 
     %Iniciando referências
-    \begin{thebibliography}{3}
+    \begin{thebibliography}{2}
         \bibitem{frank} 
         Frank Rosenblatt \\
         \href{http://www.csis.pace.edu/~ctappert/srd/b1.pdf}{The Father of Deep Learning} 
@@ -156,10 +156,6 @@ contents={%
         \bibitem{arthur} 
         Arthur Samuel \\
         \href{https://cs.stanford.edu/memoriam/professor-arthur-samuel}{Stanford  File} 
-    
-        \bibitem{arthur2} 
-        Arthur Samuel pt.2 \\
-        \href{https://history-computer.com/ModernComputer/thinkers/Samuel.html}{History Computer} 
     \end{thebibliography}
     
 \end{document}
