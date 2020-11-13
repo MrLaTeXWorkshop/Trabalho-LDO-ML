@@ -1,4 +1,3 @@
-
 \documentclass[12pt]{article}
 \usepackage[utf8]{ inputenc}
 \usepackage[brazil]{babel}
@@ -8,12 +7,19 @@
 \usepackage{fancyhdr}
 \usepackage{background}
 \usepackage{tikz}
+\usepackage{tcolorbox}
+
+%Configurando caixa personalizada
+\newtcolorbox{caixa}{colback=red!5!white,colframe=red!75!black}
+
+%Usando biblioteca de mapas mentais para o tikz
 \usetikzlibrary{mindmap}
 
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 % Path das imagens
 \graphicspath{{../../imagens/capitulo4/}}
+
 %----------------------------------------------------------
 \hypersetup{
     colorlinks=true,
@@ -22,6 +28,7 @@
     urlcolor=cyan,
 }
 %----------------------------------------------------------
+
 % Cabeçalho e rodapé
 \pagestyle{fancy}
 \fancyhf{}
@@ -46,8 +53,7 @@ Tópicos de Machine Learning}}
 
 \author{Igor Marques Reis}
 \date{Novembro de 2020}
-%----------------------------------------------------------
-                %  MAPA MENTAL  %
+
 \begin{document}
 
 
@@ -60,39 +66,41 @@ Tópicos de Machine Learning}}
     
     \
     
+    %----------------------------------------------------------
+                %  MAPA MENTAL  %
     \begin{tikzpicture}[grow cyclic, text width=2.7cm, align=flush center,
 	level 1/.style={level distance=5cm,sibling angle=90},
 	level 2/.style={level distance=2.5cm,sibling angle=57}]
 
-\node{\textbf{Algumas áreas de Machine Learning}}
-child { node {Educação}
-	child { node {\href{https://educador360.com/gestao/deep-learning/}{Deep Learning}}}
-	child { node {\href{https://www.terra.com.br/noticias/dino/aprendizado-de-maquina-nas-escolas-prepara-os-jovens-para-os-desafios-da-transformacao-digital-no-brasil,567b6b42531c4546e61131673ae0af6b712hokp0.html}{Infantil}}}
-	child { node {\href{http://www.betha.com.br/noticia/com-machine-learning-betha-sistemas-preve-reprovacao-e-evasao-escolar-logo-no-inicio-do-ano}{Evasão Escolar}}}
-	child { node {\href{https://cer.sebrae.com.br/machine-learning-na-educacao-como-funciona/}{Escolas}}}
-}
-child { node {Negócios}
-	child { node {\href{https://www.bloomberg.com.br/blog/big-data-machine-learning-e-data-science-aplicadas-no-mercado-financeiro/}{Mercado Financeiro}}}
-	child { node {\href{https://minerandodados.com.br/prevendo-precos-de-acoes-da-bolsa-de-valores-com-machine-learning/}{Bolsa de Valores}}}
-	child { node {\href{https://bit.ly/37fykl1}{Indústria}}}
-	child { node {\href{https://computerworld.com.br/inovacao/como-empresas-tem-aplicado-machine-learning-para-impulsionar-negocios/}{Empresas Inteligentes}}}
-}
-child { node {Games}
-	child { node {\href{https://www.youtube.com/watch?v=qv6UVOQ0F44}{MarI/O}}}
-	child { node {\href{https://www.youtube.com/watch?v=cwzKjFkSyIE}{Jogo da Velha}}}
-	child { node {\href{https://www.youtube.com/watch?v=-oUVr_B_cQo}{Mortal Kombat}}}
-}
-child { node {Segurança}
-	child { node {\href{https://startupi.com.br/2019/07/inteligencia-artificial-comeca-a-chegar-a-seguranca-publica/}{Vida Pública}}}
-	child { node {\href{https://blogbrasil.westcon.com/os-beneficios-do-machine-learning-na-seguranca-de-rede}{Redes}}}
-	child { node {\href{https://revistagalileu.globo.com/Tecnologia/noticia/2020/08/inteligencia-artificial-preve-ocorrencia-de-crimes-em-areas-urbanas.html}{Crimes Urbanos}}}
-	child { node {\href{https://blog.algartelecom.com.br/mge/como-o-machine-learning-ajuda-empresas-na-seguranca-da-informacao/}{Dados}}}
-	child { node {\href{https://computerworld.com.br/plataformas/projeto-usa-machine-learning-para-combate-a-lavagem-de-dinheiro/}{Lavagem de Dinheiro}}}
-};
+        \node{\textbf{Algumas áreas de Machine Learning}}
+        child { node {Educação}
+            child { node {\href{https://educador360.com/gestao/deep-learning/}{Deep Learning}}}
+            child { node {\href{https://www.terra.com.br/noticias/dino/aprendizado-de-maquina-nas-escolas-prepara-os-jovens-para-os-desafios-da-transformacao-digital-no-brasil,567b6b42531c4546e61131673ae0af6b712hokp0.html}{Infantil}}}
+            child { node {\href{http://www.betha.com.br/noticia/com-machine-learning-betha-sistemas-preve-reprovacao-e-evasao-escolar-logo-no-inicio-do-ano}{Evasão Escolar}}}
+            child { node {\href{https://cer.sebrae.com.br/machine-learning-na-educacao-como-funciona/}{Escolas}}}
+        }
+        child { node {Negócios}
+            child { node {\href{https://www.bloomberg.com.br/blog/big-data-machine-learning-e-data-science-aplicadas-no-mercado-financeiro/}{Mercado Financeiro}}}
+            child { node {\href{https://minerandodados.com.br/prevendo-precos-de-acoes-da-bolsa-de-valores-com-machine-learning/}{Bolsa de Valores}}}
+            child { node {\href{https://bit.ly/37fykl1}{Indústria}}}
+            child { node {\href{https://computerworld.com.br/inovacao/como-empresas-tem-aplicado-machine-learning-para-impulsionar-negocios/}{Empresas Inteligentes}}}
+        }
+        child { node {Games}
+            child { node {\href{https://www.youtube.com/watch?v=qv6UVOQ0F44}{MarI/O}}}
+            child { node {\href{https://www.youtube.com/watch?v=cwzKjFkSyIE}{Jogo da Velha}}}
+            child { node {\href{https://www.youtube.com/watch?v=-oUVr_B_cQo}{Mortal Kombat}}}
+        }
+        child { node {Segurança}
+            child { node {\href{https://startupi.com.br/2019/07/inteligencia-artificial-comeca-a-chegar-a-seguranca-publica/}{Vida Pública}}}
+            child { node {\href{https://blogbrasil.westcon.com/os-beneficios-do-machine-learning-na-seguranca-de-rede}{Redes}}}
+            child { node {\href{https://revistagalileu.globo.com/Tecnologia/noticia/2020/08/inteligencia-artificial-preve-ocorrencia-de-crimes-em-areas-urbanas.html}{Crimes Urbanos}}}
+            child { node {\href{https://blog.algartelecom.com.br/mge/como-o-machine-learning-ajuda-empresas-na-seguranca-da-informacao/}{Dados}}}
+            child { node {\href{https://computerworld.com.br/plataformas/projeto-usa-machine-learning-para-combate-a-lavagem-de-dinheiro/}{Lavagem de Dinheiro}}}
+        };
 
 
 
-\end{tikzpicture}
+    \end{tikzpicture}
     
     
     \
@@ -109,6 +117,20 @@ child { node {Segurança}
     
     \
     
+    \
+
+    \begin{caixa}
+
+        \begin{center}
+
+            \href{https://soundcloud.com/gustavo-rodrigues-468052117/ldo-machine-learning-capitulo04}{Ouça o Podcast desse PDF!}
+            
+        \end{center}
+
+    \end{caixa}
+
+    \
+
     \
     
     \centering Agora que você já tem uma visão mais ampla sobre Machine Learning,
@@ -213,13 +235,13 @@ qualquer ajuda (\href{https://epocanegocios.globo.com/Tecnologia/noticia/2019/02
             \begin{itemize}
             
             %---------------------------------------
-                \item
-                \href{https://itforum.com.br/colunas/como-o-machine-learning-e-a-ia-podem-revolucionar-a-educacao/}{Como o machine learning e a IA podem revolucionar a educação.}
+             \item
+             \href{https://itforum.com.br/colunas/como-o-machine-learning-e-a-ia-podem-revolucionar-a-educacao/}{Como o machine learning e a IA podem revolucionar a educação.}
 
             
             %----------------------------------------    
-                \item
-                \href{https://cer.sebrae.com.br/machine-learning-na-educacao-como-funciona/}{Machine Learning na educação: Como funciona?}
+             \item
+             \href{https://cer.sebrae.com.br/machine-learning-na-educacao-como-funciona/}{Machine Learning na educação: Como funciona?}
 
             
             %----------------------------------------
