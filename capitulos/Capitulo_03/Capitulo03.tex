@@ -1,5 +1,4 @@
-%importe
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
@@ -9,6 +8,16 @@
 \usepackage{background}
 \usepackage[a4paper,top=3.5cm,left=3cm,right=3cm,bottom=2.5cm]{geometry}
 \usepackage{lmodern}
+\usepackage{tikz}
+\usepackage[font={small,stretch=0.80,it}]{caption}
+\usepackage{tcolorbox}
+
+
+\newtcolorbox{caixa}{colback=red!5!white,colframe=red!60!black}
+
+%Configurando o mapa mental
+\usetikzlibrary{mindmap}
+
 
 %Configurando a path das imagens
 \graphicspath{{../../imagens/capitulo3/}}
@@ -47,9 +56,10 @@ contents={
 \flushbottom
 
 %títulos,autor e data
-\title{\textbf{Capítulo 3 \\ Como é feito esse aprendizado de máquina}}
+\title{\textbf{Capítulo 3 \\ Como é feito o aprendizado de máquina}}
 \author{Homenique Vieira Martins}
 \date{Novembro de 2020}
+
 
 
 \begin{document}
@@ -57,15 +67,46 @@ contents={
     %Inserindo o título
     \maketitle
 
+
+    %Mapa mental
+    \begin{center}
+      \begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=orange!40,
+        level 1/.append style={level distance=5cm,sibling angle=90},
+        level 2/.append style={level distance=3cm,sibling angle=45}]
+
+        \node{Aprendizagem de maquina}
+        child [concept color=yellow!30] { node {YouTube \\ \ref{sec:youtube}}
+        child { node {\href{https://www.youtube.com/watch?v=Lu56xVlZ40M}{IA quebrado o jogo}}}
+        child { node {\href{https://www.youtube.com/watch?v=sw7UAZNgGg8&t}{O jogo que fica mais esperto}}}
+        child { node {\href{https://www.youtube.com/watch?v=QOJfyp0KMmM}{Machine Learning destruindo no Tetris}}}
+              }
+        child [concept color=teal!40] { node {Feramentas \\ \ref{sec:feramentas}}
+        child { node {\href{https://cloud.google.com/vision/}{Google Vision AI}}}
+        child { node {\href{https://www.tensorflow.org/?hl=pt-br}{tensorflow}}}
+              }
+          child [concept color=purple!50] { node {Leituras \\ \ref{sec:leituras}}
+        child { node {\href{https://www.datageeks.com.br/machine-learning/}{Machine Learning para todos}}}
+        child { node {\href{https://bityli.com/hGR18}{Supervisionada ou Não?}}}
+              };
+      \end{tikzpicture}
+
+    \end{center}
+
+  %Configurando pagina
+  \newpage   
+
     %Aumentando o tamanho padrão das fontes
     \Large
 
      %Iniciando a seção 'O que é'
     \section{O que é?}
-    \paragraph{}Nos dias de hoje é difícil conhecer uma pessoa que nunca tenha ouvimdp falar de Machine 
-    Learning, que muitas das vezes é tratado com algo magico ou de outro mundo que uma máquina 
-    possa aprender principalmente com a mística que muitas empresas fazem com esse termo da moda. Porém não é bem assim, igual a um ser humano e necessário ensinar uma máquina aprenderem para que elas possam fazer coisas incríveis, e para isso existe estratégia diferentes para ensinar máquina e assim ela possa do resultado melhores para dada situação. Bora lá conhecer uma poucas dos 3 tipos de aprendizado mais populares 
-
+    \paragraph{}
+    Pode parecer estranho a ideia de ensinar uma máquina a aprender algo , porém o machine learning nada mais é 
+    que uma maneira diferente de tratarmos os problemas computacionais. Onde antes o programador tinha que pensar 
+    em todas as soluções possíveis para um determinado problema agora a própria máquina pode gerar boa parte ou quase 
+    toda a solução para um problema. isso tudo é possível graças a certas técnicas de aprendizado de máquinas, neste 
+    LDO eu vou apresentar para você as 3 técnicas mais populares nos dias de hoje.    
+    
     % 01 - Aprendizado Supervisionado 
     \section{Aprendizado Supervisionado:}
     \begin{figure}[ht]
@@ -73,9 +114,12 @@ contents={
         \includegraphics[scale=0.3]{robo_aprendedo.jpg}
     \end{figure}
     \paragraph{}Vamos dizer que você quer que uma maquina aprenda a reconhecer o que é um gato, para isso você
-    precisa mostrar para maquina varias fotos do que é um gato e o que não é um gato, depois de uma
-    certo tempo essa maquina vai começar a reconhecer gatos, porém ainda podendo errar , esse estilo
-    de abordagem é conhecida como aprendizado supervisionado. Onde você informar para máquina um dado, informação, foto e etc. E junto a essa informação você também rotula a mesma para a máquina entender qual é o objeto que ela está estudado.  
+    precisa mostrar para ela varias fotos de gatos e coisa que não são gatos e informando-a a mesma aquilo que é um gato 
+    e o que não é um gato, depois de uma certo numero de rodadas a maquina vai começar a reconhecer padrões que vão indicar que 
+    algo pode ser um gato com mais ou menos uma certeza, porém ainda sim podendo errar, 
+    esse estilo de abordagem é conhecida como aprendizado supervisionado. Onde você informar para máquina os dados( informação,
+     foto e etc) e junto a ao dados você também rotula os mesmos para a máquina entender qual é o objeto que ela está sendo
+     estudado.  
     Essa abordagem é excelente para situações onde existem um padrão conhecido e você quer a máquina 
     reconheça e possa atuar em cima disso.
 
@@ -83,8 +127,8 @@ contents={
    % 02 - Aprendizado não Supervisionado 
     \section{Aprendizado não Supervisionado:}
     \paragraph{} Agora você não quer rotular nada, mas quer a máquina diferencie por si só o que ela encontra
-    e separe em grupo que ela acha que seja parecido, isso é um aprendizado não supervisionado.
-    Onde a máquina só tem o objeto, porém ela tem que classificar cada objeto a partir de um
+    e separe em grupos que ela acha que seja parecido, isso é um aprendizado não supervisionado.
+    Onde a máquina só tem os dados, porém ela tem que classificar cada objeto a partir de um
     conjunto de variáveis  que ela acha que sejam parecidas. 
     \\
       \begin{figure}[ht]
@@ -93,18 +137,19 @@ contents={
     \end{figure}
     \\
     Pegamos por exemplo a Amazon,
-    ela tem vários clientes com gostos diferentes, mas o que ela pode recomendar para cada cliente
-    ou qual é a melhor tipo de abordagem para determinado tipo de clientes. Esse tipo de análise,
-    pode ser muito bem feito por esse tipo de abordagem de aprendizado   
+    ela tem vários clientes com gostos diferentes, porém ela quer saber qual produto recomendar para um determinado
+    cliente que almente a chances dela vender o produto ou qual é a melhor tipo de abordagem para determinado 
+    tipos de clientes. Esse tipo de análise,pode ser muito bem feito por esse tipo de abordagem de aprendizado   
 
   % 03 - Aprendizagem por reforço
-    \section{Por reforço:}
+    \section{Aprendizado Por reforço:}
     \begin{figure}[ht]
         \centering
         \includegraphics[scale = 0.2]{jack-jack-num-num-cookie_orig.png}
     \end{figure}
 
-    \paragraph{}Aprendizagem por reforço é uma área de aprendizagem de máquina que investiga como agentes de software devem agir em determinados ambientes de modo a maximizar alguma noção de recompensa cumulativa.
+    \paragraph{}Aprendizagem por reforço é uma área de aprendizagem de máquina que investiga como a maquina devem agir em determinados 
+            ambientes de modo a maximizar alguma noção de recompensa cumulativa.
 
    % 04 - Sessão Extra  
     \section*{Extra}
