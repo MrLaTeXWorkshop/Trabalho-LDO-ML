@@ -63,8 +63,8 @@ contents={%
 
     \begin{center}
         \begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=orange!40,
-        level 1/.append style={level distance=5cm,sibling angle=90},
-        level 2/.append style={level distance=3cm,sibling angle=45}]
+        level 1/.append style={level distance=5cm,sibling angle=105},
+        level 2/.append style={level distance=3cm,sibling angle=55}]
 
         \node{Machine Learning e Embarcados Veiculares}
             child [concept color=yellow!30] { node {Embarcados Veiculares \\ \ref{sec:embarcado}}
@@ -88,7 +88,7 @@ contents={%
 
         \begin{center}
 
-            \href{https://soundcloud.com/gustavo-rodrigues-468052117/ldo-machine-learning-capitulo04}{Ouça o Podcast desse PDF!}
+            \href{https://soundcloud.com/gustavo-rodrigues-468052117/ldo-machine-learning-capitulo05}{Ouça o Podcast desse PDF!}
             
         \end{center}
 
@@ -97,21 +97,21 @@ contents={%
     \section{Inicio} 
 
         Agora que você acompanhou o Aprendizado de Máquina ao longo de sua evolução, e entende também algumas das características
-        sobre o seu funcionamento e inclusive vários exemplos de suas implementações. Neste módulo iremos ver um outro ramo onde 
+        sobre o seu funcionamento e inclusive vários exemplos de suas implementações. Neste módulo iremos ver mais um ramo onde 
         Machine Learning tem sido muito utilizado: Embarcados Veiculares
 
     \section {Um pouco sobre carros} \label{sec:carros}
 
         Como visto anteriormente, a história do campo do Aprendizados de máquinas é antigo, assim também como também a história 
-        dos automóveis, que possuir origens que no século XVIII(18), com a invenção dos carros à vapor. Nós não vamos entrar em 
-        detalhe nessa história evolutiva, e por isso, se você quiser ver mais sobre o assunto, deixarei links no final desse PDF, 
-        mas em resumo, vamos pontuar os principais pontos da evolução dos carros:
+        dos automóveis, que possui origens no século XVIII(18), com a invenção dos carros à vapor. Nós não vamos entrar em 
+        detalhe nessa história evolutiva, e por isso, se você quiser ver mais sobre o assunto, deixarei links sobre ele na secção \ref{sec:extra}, 
+        mas em resumo, vamos colocar os principais pontos da evolução dos carros:
 
         \begin{itemize}
 
-            \item \textbf{\emph{1769}} - Criação do primeiro motor a vapor, pelo frânces Nicolas-Joseph Cugnot, e que realmente funcionou. Essa primeira geração de carros
-            se tornaram prevalentes pelos próximos cem(100) anos, porém se tornou obsoleto, devido a sua pesada caldeira, o que limitiva 
-            as atividades que o mesmo podia fazer;
+            \item \textbf{\emph{1769}} - Criação do primeiro carro com motor a vapor, pelo frânces \href{https://pt.wikipedia.org/wiki/Joseph_Cugnot}{Nicolas-Joseph Cugnot},
+            e que realmente funcionou. Essa primeira geração de carros se tornou prevalente pelos próximos cem(100) anos, porém se tornou obsoleto, devido a sua pesada 
+            \href{https://www.rwengenharia.eng.br/o-que-e-uma-caldeira/}{caldeira}, o que limitiva as atividades que o mesmo podia fazer;
 
             \begin{figure}[htp]
 
@@ -121,8 +121,8 @@ contents={%
 
             \end{figure}
 
-            \item \textbf{\emph{1835}} - Construção do primeiro carro elétrico, feito por Thomas Davenport. Infelizmente o uso de carros elétricos 
-            não se popularizou, e por conta disso, o uso de veículos elétricos foram adaptados para trilhos.
+            \item \textbf{\emph{1835}} - Construção do primeiro carro elétrico, feito por \href{https://en.wikipedia.org/wiki/Thomas_Davenport_(inventor)}{Thomas Davenport}. 
+            Infelizmente o uso de carros elétricos não se popularizou, e por conta disso, o uso de veículos elétricos foram adaptados para trilhos.
 
             \begin{figure}[htp]
 
@@ -134,8 +134,8 @@ contents={%
 
             \newpage
 
-            \item \textbf{\emph{1886}} - Karl Benz registrou o primeiro carro com motor a combustão e com a ajuda de sua esposa, Bertha
-            Benz, conseguiram provar que o seu carro tinha funções cotidianas e valia o investimento.
+            \item \textbf{\emph{1886}} - \href{https://en.wikipedia.org/wiki/Carl_Benz}{Karl Benz} registrou o primeiro carro com motor a combustão e com a ajuda de sua esposa, 
+            \href{https://pt.wikipedia.org/wiki/Bertha_Benz}{Bertha Benz}, conseguiram provar que o seu carro tinha funções cotidianas e valia o investimento.
 
             \begin{figure}[htp]
 
@@ -145,22 +145,24 @@ contents={%
 
             \end{figure}
 
-            \item \textbf{\emph{1908}} - Lançamento do \emph{Ford Model T} ou como ficou conhecido \emph{Ford Bigode}, que é considerado o primeiro carro popular
-            da história.
+            \item \textbf{\emph{1908}} - Lançamento do \href{https://pt.wikipedia.org/wiki/Ford_Model_T}{\emph{Ford Model T}} ou como ficou conhecido no Brasil
+            \emph{Ford Bigode}, que é considerado o primeiro carro popular da história.
 
             \begin{figure}[htp]
 
                 \centering
                 \includegraphics[scale=1]{modelt.png}
-                \caption{\centering Foto do carro \emph{Ford Model T}}
+                \caption{\centering Foto do carro \href{https://pt.wikipedia.org/wiki/Ford_Model_T}{\emph{Ford Model T}}}
 
             \end{figure}
 
     \end{itemize}
 
+    \newpage
+
     \section{Eletrônica Embarcada} \label{sec:embarcado}
 
-    Mas então fica ai a grande pergunta: \textbf{\emph{O que são Embarcados veiculares?}} Bem de acordo com a definição, é a integração dispositivos eletrônicos, como
+    Mas então fica ai a grande pergunta: \textbf{\emph{O que são Embarcados veiculares?}} Bem de acordo com a definição, é a integração de dispositivos eletrônicos, como
     microprocessadores e sistemas compostos para ampliar as funcionalidades dos automóveis.
 
     Alguns exemplos de embarcados veiculares são:
@@ -187,6 +189,8 @@ contents={%
     É claro também que os exemplos citados acima são até bastente conhecidos. O que muitos de vocês
     não devem saber, é sobre as inovações que estão acontecendo na atualidade.
 
+    \newpage
+
     \section{Park Assist}
 
     \textbf{\emph{Park Assist}} ou como também é conhecido: Sistema Avançado de Orientação de Estacionamento 
@@ -194,8 +198,7 @@ contents={%
     
     Essa forma de eletrônica embarcada, foi primeiramente introduzida pela Toyota em 1999, para o mercado 
     japônes com o \href{https://en.wikipedia.org/wiki/Toyota_Prius}{Hybrid Prius}. Atualmente, 
-    marcas como Volkswagen e Chevrolet, também possuem esse sistema de Park Assist.
-
+    essa tecnologia é presente em carros de outras marcas, como: Volkswagen , Chevrolet, Volvo, entre outros.
     \begin{figure}[htp]
 
         \centering
@@ -225,6 +228,8 @@ contents={%
         \item \href{https://www.youtube.com/watch?v=oVBvOwyCFmg}{\textbf{Assista um vídeo do Park Assist funcionando na prática}}
 
     \end{itemize}
+
+    \newpage
 
     %Iniciando referências
     \begin{thebibliography}{6}

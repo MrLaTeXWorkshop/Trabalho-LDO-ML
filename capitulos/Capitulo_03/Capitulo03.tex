@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
@@ -11,7 +11,6 @@
 \usepackage{tikz}
 \usepackage[font={small,stretch=0.80,it}]{caption}
 \usepackage{tcolorbox}
-
 
 \newtcolorbox{caixa}{colback=red!5!white,colframe=red!60!black}
 
@@ -67,12 +66,11 @@ contents={
     %Inserindo o título
     \maketitle
 
-
     %Mapa mental
     \begin{center}
       \begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=orange!40,
-        level 1/.append style={level distance=5cm,sibling angle=90},
-        level 2/.append style={level distance=3cm,sibling angle=45}]
+        level 1/.append style={level distance=5cm,sibling angle=105},
+        level 2/.append style={level distance=3cm,sibling angle=55}]
 
         \node{Aprendizagem de maquina}
         child [concept color=yellow!30] { node {YouTube \\ \ref{sec:youtube}}
@@ -86,17 +84,24 @@ contents={
               }
           child [concept color=purple!50] { node {Leituras \\ \ref{sec:leituras}}
         child { node {\href{https://www.datageeks.com.br/machine-learning/}{Machine Learning para todos}}}
-        child { node {\href{https://bityli.com/hGR18}{Supervisionada ou Não?}}}
+        child { node {\href{https://bityli.com/hGR18}{Supervisio nada ou Não?}}}
               };
       \end{tikzpicture}
 
     \end{center}
 
-  %Configurando pagina
-  \newpage   
+    %Configurando pagina
+    \newpage   
 
-    %Aumentando o tamanho padrão das fontes
-    \Large
+    \begin{caixa}
+
+      \begin{center}
+
+          \href{https://soundcloud.com/gustavo-rodrigues-468052117/ldo-machine-learning-capitulo03}{Ouça o Podcast desse PDF!}
+
+      \end{center}
+
+    \end{caixa}
 
      %Iniciando a seção 'O que é'
     \section{O que é?}
@@ -106,7 +111,7 @@ contents={
     em todas as soluções possíveis para um determinado problema agora a própria máquina pode gerar boa parte ou quase 
     toda a solução para um problema. isso tudo é possível graças a certas técnicas de aprendizado de máquinas, neste 
     LDO eu vou apresentar para você as 3 técnicas mais populares nos dias de hoje.    
-    
+
     % 01 - Aprendizado Supervisionado 
     \section{Aprendizado Supervisionado:}
     \begin{figure}[ht]
@@ -123,6 +128,7 @@ contents={
     Essa abordagem é excelente para situações onde existem um padrão conhecido e você quer a máquina 
     reconheça e possa atuar em cima disso.
 
+    \newpage
 
    % 02 - Aprendizado não Supervisionado 
     \section{Aprendizado não Supervisionado:}
@@ -133,7 +139,7 @@ contents={
     \\
       \begin{figure}[ht]
         \centering
-        \includegraphics[scale = 0.3]{classificação de grupos.png}
+        \includegraphics[scale = 0.25]{classificação de grupos.png}
     \end{figure}
     \\
     Pegamos por exemplo a Amazon,
@@ -141,7 +147,7 @@ contents={
     cliente que almente a chances dela vender o produto ou qual é a melhor tipo de abordagem para determinado 
     tipos de clientes. Esse tipo de análise,pode ser muito bem feito por esse tipo de abordagem de aprendizado   
 
-  % 03 - Aprendizagem por reforço
+    % 03 - Aprendizagem por reforço
     \section{Aprendizado Por reforço:}
     \begin{figure}[ht]
         \centering
@@ -151,8 +157,10 @@ contents={
     \paragraph{}Aprendizagem por reforço é uma área de aprendizagem de máquina que investiga como a maquina devem agir em determinados 
             ambientes de modo a maximizar alguma noção de recompensa cumulativa.
 
-   % 04 - Sessão Extra  
-    \section*{Extra}
+    \newpage 
+
+    % 04 - Sessão Extra  
+    \section*{\centering Extra}
     Quer ver mais um pouco sobre o Machine Learning?
     \begin{itemize}
         \item\href{https://www.youtube.com/watch?v=R9OHn5ZF4Uo&t}{How Machine Learn(Com legendas em pt-br)}
