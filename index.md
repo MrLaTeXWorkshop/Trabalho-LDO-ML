@@ -35,7 +35,7 @@ Eu e os integrantes desse grupo, decidimos que queriamos fazer um conteúdo que 
 
 Se você estiver interessado em baixar o nosso conteúdo, estamos disponibilizando duas versões do projeto:
 
-* Baixar ou clonar esse repositório, ou...
+* Baixar/clonar nosso [repositório](https://github.com/MysteRys337/Trabalho-LDO-ML), ou...
 * Baixar a última versão lançada do projeto clicando [aqui](https://github.com/MysteRys337/Trabalho-LDO-ML/releases).
 
 Recomendamos que baixe o LDO a partir da página de download, use apenas o código fonte se você tiver conhecimento de LaTeX e como compilar os arquivos.
