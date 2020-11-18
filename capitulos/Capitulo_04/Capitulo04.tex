@@ -68,39 +68,39 @@ Tópicos de Machine Learning}}
     
     %----------------------------------------------------------
                 %  MAPA MENTAL  %
-    \begin{tikzpicture}[grow cyclic, text width=2.7cm, align=flush center,
-	level 1/.style={level distance=5cm,sibling angle=90},
-	level 2/.style={level distance=2.5cm,sibling angle=57}]
+    \begin{center}
+        \begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=orange!90,
+        level 1/.append style={level distance=5cm,sibling angle=90},
+        level 2/.append style={level distance=3cm,sibling angle=45}]
 
         \node{\textbf{Algumas áreas de Machine Learning}}
-        child { node {Educação}
-            child { node {\href{https://educador360.com/gestao/deep-learning/}{Deep Learning}}}
-            child { node {\href{https://www.terra.com.br/noticias/dino/aprendizado-de-maquina-nas-escolas-prepara-os-jovens-para-os-desafios-da-transformacao-digital-no-brasil,567b6b42531c4546e61131673ae0af6b712hokp0.html}{Infantil}}}
-            child { node {\href{http://www.betha.com.br/noticia/com-machine-learning-betha-sistemas-preve-reprovacao-e-evasao-escolar-logo-no-inicio-do-ano}{Evasão Escolar}}}
-            child { node {\href{https://cer.sebrae.com.br/machine-learning-na-educacao-como-funciona/}{Escolas}}}
-        }
-        child { node {Negócios}
-            child { node {\href{https://www.bloomberg.com.br/blog/big-data-machine-learning-e-data-science-aplicadas-no-mercado-financeiro/}{Mercado Financeiro}}}
-            child { node {\href{https://minerandodados.com.br/prevendo-precos-de-acoes-da-bolsa-de-valores-com-machine-learning/}{Bolsa de Valores}}}
-            child { node {\href{https://bit.ly/37fykl1}{Indústria}}}
-            child { node {\href{https://computerworld.com.br/inovacao/como-empresas-tem-aplicado-machine-learning-para-impulsionar-negocios/}{Empresas Inteligentes}}}
-        }
-        child { node {Games}
-            child { node {\href{https://www.youtube.com/watch?v=qv6UVOQ0F44}{MarI/O}}}
-            child { node {\href{https://www.youtube.com/watch?v=cwzKjFkSyIE}{Jogo da Velha}}}
-            child { node {\href{https://www.youtube.com/watch?v=-oUVr_B_cQo}{Mortal Kombat}}}
-        }
-        child { node {Segurança}
-            child { node {\href{https://startupi.com.br/2019/07/inteligencia-artificial-comeca-a-chegar-a-seguranca-publica/}{Vida Pública}}}
-            child { node {\href{https://blogbrasil.westcon.com/os-beneficios-do-machine-learning-na-seguranca-de-rede}{Redes}}}
-            child { node {\href{https://revistagalileu.globo.com/Tecnologia/noticia/2020/08/inteligencia-artificial-preve-ocorrencia-de-crimes-em-areas-urbanas.html}{Crimes Urbanos}}}
-            child { node {\href{https://blog.algartelecom.com.br/mge/como-o-machine-learning-ajuda-empresas-na-seguranca-da-informacao/}{Dados}}}
-            child { node {\href{https://computerworld.com.br/plataformas/projeto-usa-machine-learning-para-combate-a-lavagem-de-dinheiro/}{Lavagem de Dinheiro}}}
-        };
+            child [concept color=olive!80] { node {Educação \ref{sec:ML_Na_Educacao}}
+                child { node {\href{https://educador360.com/gestao/deep-learning/}{Deep Learning}}}
+                child { node {\href{https://www.terra.com.br/noticias/dino/aprendizado-de-maquina-nas-escolas-prepara-os-jovens-para-os-desafios-da-transformacao-digital-no-brasil,567b6b42531c4546e61131673ae0af6b712hokp0.html}{Infantil}}}
+                child { node {\href{http://www.betha.com.br/noticia/com-machine-learning-betha-sistemas-preve-reprovacao-e-evasao-escolar-logo-no-inicio-do-ano}{Evasão Escolar}}}
+                child { node {\href{https://cer.sebrae.com.br/machine-learning-na-educacao-como-funciona/}{Escolas}}}
+            }
+            child [concept color=violet!60] { node {Negócios \ref{sec:ML_Negocios}}
+                child { node {\href{https://www.bloomberg.com.br/blog/big-data-machine-learning-e-data-science-aplicadas-no-mercado-financeiro/}{Mercado Financeiro}}}
+                child { node {\href{https://minerandodados.com.br/prevendo-precos-de-acoes-da-bolsa-de-valores-com-machine-learning/}{Bolsa de Valores}}}
+                child { node {\href{https://bit.ly/37fykl1}{Indústria}}}
+                child { node {\href{https://computerworld.com.br/inovacao/como-empresas-tem-aplicado-machine-learning-para-impulsionar-negocios/}{Empresas Inteligentes}}}
+            }
+            child [concept color=yellow!80] { node {Games \ref{sec:MarI/O}}
+                child { node {\href{https://www.youtube.com/watch?v=qv6UVOQ0F44}{MarI/O}}}
+                child { node {\href{https://www.youtube.com/watch?v=cwzKjFkSyIE}{Jogo da Velha}}}
+                child { node {\href{https://www.youtube.com/watch?v=-oUVr_B_cQo}{Mortal Kombat}}}
+            }
+            child [concept color=purple!50] { node {Segurança}
+                child { node {\href{https://startupi.com.br/2019/07/inteligencia-artificial-comeca-a-chegar-a-seguranca-publica/}{Vida Pública}}}
+                child { node {\href{https://blogbrasil.westcon.com/os-beneficios-do-machine-learning-na-seguranca-de-rede}{Redes}}}
+                child { node {\href{https://revistagalileu.globo.com/Tecnologia/noticia/2020/08/inteligencia-artificial-preve-ocorrencia-de-crimes-em-areas-urbanas.html}{Crimes Urbanos}}}
+                child { node {\href{https://blog.algartelecom.com.br/mge/como-o-machine-learning-ajuda-empresas-na-seguranca-da-informacao/}{Dados}}}
+                child { node {\href{https://computerworld.com.br/plataformas/projeto-usa-machine-learning-para-combate-a-lavagem-de-dinheiro/}{Lavagem de Dinheiro}}}
+            };
+        \end{tikzpicture}
 
-
-
-    \end{tikzpicture}
+    \end{center}
     
     
     \
