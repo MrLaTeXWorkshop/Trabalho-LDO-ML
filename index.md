@@ -46,6 +46,10 @@ Recomendamos que baixe o LDO a partir da página de download, use apenas o códi
 
 ### [Faça sua inscrição no Sympla](https://www.sympla.com.br/tecnoldo__1046454)
 
+# Quer aprender sobre LaTeX?
+
+### [Clique nesse link!](https://drive.google.com/drive/folders/1ysnVXBn4i6a720eZNmPDEhmWZrCRSiSN?usp=sharing)
+
 # Créditos
 
 [Créditos](https://github.com/MysteRys337/Trabalho-LDO-ML/graphs/contributors)
