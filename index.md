@@ -11,8 +11,8 @@
 - [x] 4/4 PDFs feitos
 - [x] 4/4 PDFs feitos utilizando LaTeX
 - [x] links interessantes 
-- [ ] Mapas mentais
-- [ ] Aúdiolivros
+- [x] Mapas mentais
+- [x] Aúdiolivros
 
 
 [Clique nesse link para ir a página de download](https://github.com/MysteRys337/Trabalho-LDO-ML/releases)
